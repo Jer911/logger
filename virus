@@ -20,5 +20,5 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").PetSystem.Remotes.HatchPet:FireServer(unpack(args))
-end)
-end)
+end
+end
