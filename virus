@@ -4,8 +4,8 @@ local PhantomForcesWindow = Library:NewWindow("Jerry")
  
 local KillingCheats = PhantomForcesWindow:NewSection("Egg")
  
-KillingCheats:CreateToggle("Hatch Egg", function()
-print while wait() do
+KillingCheats:CreateToggle("Hatch Egg", function(value)
+print (while wait() do
 local args = {
     [1] = "VoidEgg",
     [3] = {
@@ -20,5 +20,5 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").PetSystem.Remotes.HatchPet:FireServer(unpack(args))
-end
+end)
 end)
