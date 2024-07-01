@@ -3,7 +3,7 @@ _G.orbs = true
 local PhantomForcesWindow = Library:NewWindow("Jerry")
 local KillingCheats = PhantomForcesWindow:NewSection("EGG")
 function autoegg()
-    while _G.orbs == true do
+    while _G.orbs == true and task.wait() do
         local args = {
             [1] = "VoidEgg",
             [3] = {
